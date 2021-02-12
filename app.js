@@ -19,9 +19,9 @@ let partidaIniciada = false;
 // Event listener  
 titulo.click( ()=> {
     if(!partidaIniciada) {
-        partidaIniciada = true;
-        botones.removeClass('anulado');
         puntaje.addClass('oculto');
+        botones.removeClass('anulado');
+        manejoDeTitulo();
         setTimeout( sigSecuencia, 700);
     }
 }); 
@@ -35,7 +35,10 @@ botones.click(manejoDeClick);
 function sigSecuencia() {
     patronUsuario = [];
 
-    manejoDeTitulo();
+    if(!partidaIniciada) 
+        partidaIniciada = true;
+    else
+        manejoDeTitulo();
 
     const randomNum = Math.floor( Math.random() * 4);   // Numero random 0-3 para que concuerde con un indice de array.
     const randomColor = arrayColores[randomNum];    // Saco el nombre del color segun el nro para comparar con el id.
