@@ -1,7 +1,7 @@
 
 /*Fuentes*/
 
-h1, h2, h3 {
+h1, h2, h3, a {
   font-family: 'Press Start 2P', cursive;
   color: #FEF2BF;
 }
@@ -25,7 +25,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  margin-top: 8%;
+  margin-top: 4%;
   line-height: 50px;
 }
 
@@ -38,15 +38,15 @@ h3 {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 230px;
-  width: 230px;
+  height: 200px;
+  width: 200px;
   border: 10px solid black;
   border-radius: 40px;
-  cursor: pointer;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   -ms-border-radius: 40px;
+   -o-border-radius: 40px;
+   cursor: pointer;
 }
 
 .rojo {
@@ -118,6 +118,7 @@ h3 {
   h3 {
     font-size: 1.2rem;
     margin: 40px 10%;
+    color: coral;
   }
 }
 

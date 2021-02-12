@@ -46,7 +46,7 @@ function sigSecuencia() {
     
     acumularPatronDeJuego(randomColor);
     
-    // Parpadeo del boton que toca presionar. - No lo hago funcion porque se rompe por los timeouts
+    // Parpadeo del boton que toca presionar. - No lo hago funcion porque se rompe por los timeouts.
     botonMarcado.fadeToggle(100); 
     setTimeout(() => {
         reproducirSonido(randomColor);
@@ -72,7 +72,6 @@ function manejoDeClick() {
 }
 
 // Chequea que lo que ingresa el usuario councida con el patron del juego.
-    // No se muy bien como funciona ese chequeo ni por que lo hace dos veces.
 function checkearInput() {
     let nivelActual = patronUsuario.length - 1;
     
